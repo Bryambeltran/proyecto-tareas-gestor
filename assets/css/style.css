@@ -1,0 +1,122 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+header {
+    background-color: rgba(44, 62, 80, 0.9);
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px;
+}
+main {
+    padding-top: 100px;
+}
+body {
+    background-image: url("/assets/img/fondo.jpg");
+    background-size: cover;
+    background-position: center;
+}
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: underline;
+    color: white;
+}
+
+nav a:hover {
+    color: #f1c40f;
+}
+
+.formulario {
+    background-color: rgba(255, 255, 255, 0.7);
+    width: 400px;
+    max-width: 90%;
+    padding: 25px;
+    border-radius: 10px;
+    margin: 0 auto 2rem auto;
+}
+form {
+    display: flex;
+    flex-direction: column;
+   
+ }
+.columna {
+    width: 300px;
+    flex: 1;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 1.5rem;
+    border-radius: 10px;
+}
+
+button {
+    background-color: #3498db;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: #2980b9;
+
+}
+
+#logou {
+    width: 10%;
+    position: left;
+}
+
+#agenda {
+    width: 5%; 
+
+}
+.Tablero {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 2rem;
+}
+
+footer {
+    background-color: rgba(44, 62, 80, 0.9);
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+#pendientes {
+    background-color: rgba(231, 76, 60, 0.75);
+    color: white;
+}
+
+#en-progreso {
+    background-color: rgba(241, 196, 15, 0.8);
+    color: black;
+}
+
+#completadas {
+    background-color: rgba(46, 204, 113, 0.8);
+    color: white;
+}
+@media (max-width: 430px) {
+    header,nav {
+        flex-direction: column;
+    }
+    nav {
+        margin-top: 15px;
+        align-items: center;
+    }
+}

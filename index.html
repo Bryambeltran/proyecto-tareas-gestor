@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/stylejs.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="icon" href="assets/img/agenda.png">
+
+</head>
+<body>
+    <header>
+                <img src="assets/img/agenda.png" id="agenda">
+
+        <h1>Gestor de Tareas</h1>
+        <img src="assets/img/logo.png" id="logou">
+        <nav>
+            <a href="#">Inicio</a>
+            <a href="#">Formulario</a>
+            <a href="#">Tablero</a>
+            <a href="#">Footer</a>
+        </nav>
+    </header>
+<main>
+
+<section class="formulario" id="formulario">
+ <h2>Agrega tu tarea</h2>
+    <p>Este gestor hará que tu organización esté siempre según 
+             <br> sea mas importante o esté mas cerca de tu fecha de examén. <br>Ahora ponle titulo a tu tarea:</p>
+ <form id="formulario3">
+    <label for="descripcion">Titulo:</label>  
+<textarea id="descripcion" required></textarea>  
+ 
+<label for="prioridad">Prioridad:</label>  
+<select id="prioridad" required>  
+    <option value="">Seleccionar...</option>  
+    <option value="alta">Alta</option>  
+    <option value="media">Media</option>  
+    <option value="baja">Baja</option>  
+</select>  
+ 
+<label for="fecha">Fecha límite:</label>  
+<input type="date" id="fecha" required>  
+ 
+<button type="submit">Agregar Tarea</button>  
+</form>
+</section>
+
+<section class="Tablero">
+<div class="columna" id="pendientes">  
+    <h3>Pendientes <span class="contador">0</span></h3>  
+    <div class="tareas-container"></div>  
+</div>  
+<div class="columna" id="en-progreso">  
+    <h3>En Progreso <span class="contador">0</span></h3>  
+    <div class="tareas-container"></div>  
+</div>  
+ 
+<div class="columna" id="completadas">  
+    <h3>Completadas <span class="contador">0</span></h3>  
+    <div class="tareas-container"></div>  
+</div>  
+
+</section>
+
+</main>
+<footer>
+    <p>Todos los derechos reservados, Bryam Beltrán bryam.beltran2022@alu.uct.cl</p>
+</footer>
+<script src="assets/js/script.js"></script>
+</body>
+</html>
